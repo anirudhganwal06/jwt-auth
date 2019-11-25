@@ -1,22 +1,53 @@
-.App {
-  text-align: center;
+/*          COMMON          */
+
+section {
+  padding: 40px;
 }
 
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.themeColorHoverBtn {
+  background: linear-gradient(to right, rgb(60, 0, 120), rgb(200, 0, 150));
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.themeColorHoverBtn:hover {
+  background: white;
+  color: rgb(60, 0, 120);
+}
+
+/*          HEADER          */
+
+header {
+  position: relative;
+  height: 40px;
+  width: 100%;
+  background-image: linear-gradient(
+    to right,
+    rgb(60, 0, 120),
+    rgb(200, 0, 150)
+  );
+  color: white;
+}
+
+nav .appName {
+  float: left;
+}
+
+nav li {
+  float: right;
+  list-style: none;
+}
+
+nav ul {
+  padding: 5px;
+}
+
+nav .navLink {
+  text-decoration: none;
+  color: white;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+
+nav .navLink:hover {
+  color: #eee;
 }
